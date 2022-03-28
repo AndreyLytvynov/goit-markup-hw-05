@@ -70,10 +70,12 @@ body {
   color: var(--white-text-color);
 }
 /* Шапка */
+.main-header {
+  border-bottom: 1px solid #ececec;
+}
 .container.header {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ececec;
 }
 .navigation .link.current {
   color: var(--accent-color);
@@ -283,7 +285,6 @@ body {
 }
 .teams.list {
   display: flex;
-  justify-content: space-between;
   text-align: center;
 }
 .teams .title {
@@ -307,6 +308,9 @@ body {
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.teams .card:not(:last-child) {
+  margin-right: 30px;
 }
 .cocial-media {
   margin-top: 16px;
