@@ -51,7 +51,7 @@
         Ефективні рішення <br />
         для вашого бізнесу
       </h1>
-      <button type="button" class="button order-service">Замовити послугу</button>
+      <button type="button" class="button order-service" data-modal-open>Замовити послугу</button>
     </section>
 
     <section class="qualities">
@@ -112,13 +112,15 @@
         <ul class="list we-doing-list">
           <li class="item">
             <img src="./images/box-1.jpg" alt="Чоловік займається програмуванням" width="370" />
-            <p></p>
+            <p class="we-doing-text">Десктопні додатки</p>
           </li>
           <li class="item">
             <img src="./images/box-2.jpg" alt="Дівчина синхронізовує компьютер з телефоном" width="370" />
+            <p class="we-doing-text">Мобільні додатки</p>
           </li>
           <li class="item">
             <img src="./images/box-3.jpg" alt="Планшет з палітрою кольорів" width="370" />
+            <p class="we-doing-text">Дизайнерські рішення</p>
           </li>
         </ul>
       </div>
@@ -363,6 +365,16 @@
       </div>
     </div>
   </footer>
+  <div class="backdrop closed" data-modal>
+    <div class="modal">
+      <button class="close-modal" type="button" data-modal-close>
+        <svg width="11" height="11">
+          <use href="./images/symbol-defs.svg#icon-cross"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
