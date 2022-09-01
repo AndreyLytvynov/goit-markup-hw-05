@@ -8,9 +8,6 @@
   --bgc-footer: #2f303a;
   --bgc-teams: #f5f4fa;
 }
-/* *:focus {
-  outline: none;
-} */
 
 *,
 *::before,
@@ -30,6 +27,10 @@ ul {
 img {
   max-width: 100%;
   display: block;
+}
+
+*:focus {
+  outline-color: var(--accent-color);
 }
 
 /* Убираем подчеркивание ссылок */
@@ -526,6 +527,10 @@ body {
 }
 
 .projects .link:hover .overlay {
+  transform: translateY(-100%);
+}
+
+.projects .link:focus .overlay {
   transform: translateY(-100%);
 }
 
